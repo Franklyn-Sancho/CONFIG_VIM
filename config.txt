@@ -1,0 +1,33 @@
+﻿set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mitermayer/vim-prettier'
+Plugin 'chiel92/vim-autoformat'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-surround'
+Plugin 'delimitMate.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'ryanoasis/vim-devicons'
+call vundle#end()            " required
+filetype plugin indent on
+
+autocmd VimEnter * NERDTree
+set number
+set mouse=a
+syntax on
+set smartcase
+colorscheme gruvbox
+set tabstop=4
+set shiftwidth=4
+set expandtab
